@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graf"
+    app:startDestination="@+id/introFragment">
+
+    <fragment
+        android:id="@+id/introFragment"
+        android:name="com.example.smurfs.Intro"
+        tools:layout="@layout/intro">
+        <action
+            android:id="@+id/action_introFragment_to_adventuresFragment"
+            app:destination="@id/adventuresFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adventuresFragment"
+        android:name="com.example.smurfs.Adventures"
+        tools:layout="@layout/adventures">
+        <action
+            android:id="@+id/action_adventuresFragment_to_characterFragment"
+            app:destination="@id/characterFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/characterFragment"
+        android:name="com.example.smurfs.Character"
+        tools:layout="@layout/character">
+        <action
+            android:id="@+id/action_characterFragment_to_freeTimeFragment"
+            app:destination="@id/freeTimeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/colorFragment"
+        android:name="com.example.smurfs.Color"
+        tools:layout="@layout/color">
+        <action
+            android:id="@+id/action_colorFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/favFoodFragment"
+        android:name="com.example.smurfs.FavFood"
+        tools:layout="@layout/fav_food">
+        <action
+            android:id="@+id/action_favFoodFragment_to_colorFragment"
+            app:destination="@id/colorFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/freeTimeFragment"
+        android:name="com.example.smurfs.FreeTime"
+        tools:layout="@layout/free_time">
+        <action
+            android:id="@+id/action_freeTimeFragment_to_favFoodFragment"
+            app:destination="@id/favFoodFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.smurfs.Result"
+        tools:layout="@layout/result"/>
+
+</navigation>

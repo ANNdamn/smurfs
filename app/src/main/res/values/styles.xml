@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Smurf.Buttons">
+        <item name="android:background">@color/blue</item>
+
+
+    </style>
+
+
+///как создать стиль для всех кнопок, прописать колор, скругление и наведение на кнопку
+</resources>

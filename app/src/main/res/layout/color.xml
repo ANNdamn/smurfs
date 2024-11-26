@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Какой твой любимый цвет?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <RadioGroup
+        android:layout_width="142dp"
+        android:layout_height="331dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_color"
+        app:layout_constraintVertical_bias="0.064" >
+
+        <RadioButton
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Синий" />
+
+        <RadioButton
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Красный" />
+
+        <RadioButton
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Зелёный" />
+
+        <RadioButton
+            android:id="@+id/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Жёлтый" />
+
+        <RadioButton
+            android:id="@+id/pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Розовый" />
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>
