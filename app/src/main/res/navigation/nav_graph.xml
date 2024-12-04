@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/introFragment"
-        android:name="com.example.smurfs.Intro"
-        tools:layout="@layout/intro">
+        android:name="com.example.smurfs.IntroFragment"
+        tools:layout="@layout/fragment_intro">
         <action
             android:id="@+id/action_introFragment_to_adventuresFragment"
             app:destination="@id/adventuresFragment" />
@@ -16,8 +16,8 @@
 
     <fragment
         android:id="@+id/adventuresFragment"
-        android:name="com.example.smurfs.Adventures"
-        tools:layout="@layout/adventures">
+        android:name="com.example.smurfs.AdventuresFragment"
+        tools:layout="@layout/fragment_adventures">
         <action
             android:id="@+id/action_adventuresFragment_to_characterFragment"
             app:destination="@id/characterFragment" />
@@ -25,8 +25,8 @@
 
     <fragment
         android:id="@+id/characterFragment"
-        android:name="com.example.smurfs.Character"
-        tools:layout="@layout/character">
+        android:name="com.example.smurfs.CharacterFragment"
+        tools:layout="@layout/fragment_character">
         <action
             android:id="@+id/action_characterFragment_to_freeTimeFragment"
             app:destination="@id/freeTimeFragment" />
@@ -34,8 +34,8 @@
 
     <fragment
         android:id="@+id/colorFragment"
-        android:name="com.example.smurfs.Color"
-        tools:layout="@layout/color">
+        android:name="com.example.smurfs.ColorFragment"
+        tools:layout="@layout/fragment_color">
         <action
             android:id="@+id/action_colorFragment_to_resultFragment"
             app:destination="@id/resultFragment" />
@@ -43,8 +43,8 @@
 
     <fragment
         android:id="@+id/favFoodFragment"
-        android:name="com.example.smurfs.FavFood"
-        tools:layout="@layout/fav_food">
+        android:name="com.example.smurfs.FavFoodFragment"
+        tools:layout="@layout/fragment_fav_food">
         <action
             android:id="@+id/action_favFoodFragment_to_colorFragment"
             app:destination="@id/colorFragment" />
@@ -52,8 +52,8 @@
 
     <fragment
         android:id="@+id/freeTimeFragment"
-        android:name="com.example.smurfs.FreeTime"
-        tools:layout="@layout/free_time">
+        android:name="com.example.smurfs.FreeTimeFragment"
+        tools:layout="@layout/fragment_free_time">
         <action
             android:id="@+id/action_freeTimeFragment_to_favFoodFragment"
             app:destination="@id/favFoodFragment" />
@@ -61,7 +61,7 @@
 
     <fragment
         android:id="@+id/resultFragment"
-        android:name="com.example.smurfs.Result"
-        tools:layout="@layout/result"/>
+        android:name="com.example.smurfs.ResultFragment"
+        tools:layout="@layout/fragment_result"/>
 
 </navigation>

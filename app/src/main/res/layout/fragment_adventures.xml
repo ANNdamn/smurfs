@@ -18,14 +18,15 @@
         app:layout_constraintVertical_bias="0.273" />
 
     <RadioGroup
-        android:layout_width="142dp"
-        android:layout_height="331dp"
+        android:id="@+id/advenRadioGroup"
+        android:layout_width="144dp"
+        android:layout_height="289dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question_advantures"
-        app:layout_constraintVertical_bias="0.064" >
+        app:layout_constraintVertical_bias="0.064">
 
         <RadioButton
             android:id="@+id/already_right"
@@ -52,6 +53,18 @@
             android:text="Я люблю исследовать новые места, но максимально аккуратно" />
 
     </RadioGroup>
+
+    <Button
+        android:id="@+id/advenNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle"
+        android:text="Далее"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

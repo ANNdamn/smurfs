@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.68"
-        app:srcCompat="@drawable/pngwing_com_2" />
+        app:srcCompat="@drawable/smurf_in_the_end" />
 
     <Button
         android:id="@+id/again"
@@ -56,7 +56,7 @@
         android:id="@+id/smurf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="СМУРФИК"
+        android:text="ПИШИ СЮДА РЕЗУЛЬТАТ"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -6,86 +6,91 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/question_character"
+        android:id="@+id/question_free_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Какой у тебя характер"
+        android:text="Как ты предпочитаешь проводить свободное время?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.16" />
 
     <RadioGroup
-        android:layout_width="315dp"
-        android:layout_height="497dp"
+        android:id="@+id/freeRadioGroup"
+        android:layout_width="184dp"
+        android:layout_height="474dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_free_time"
+        app:layout_constraintVertical_bias="0.156">
+
+        <RadioButton
+            android:id="@+id/read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Читаю книги и рисую" />
+
+        <RadioButton
+            android:id="@+id/sport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Занимаюсь спортом" />
+
+        <RadioButton
+            android:id="@+id/cooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Готовлю и экспериментирую на кухне" />
+
+        <RadioButton
+            android:id="@+id/explore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Исследую природу" />
+
+        <RadioButton
+            android:id="@+id/relax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Просто отдыхаю" />
+
+        <RadioButton
+            android:id="@+id/think"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Размышляю над всяким" />
+
+        <RadioButton
+            android:id="@+id/dirt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Планирую гадость/ ненавижу весь мир" />
+
+        <RadioButton
+            android:id="@+id/cry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ною" />
+
+        <RadioButton
+            android:id="@+id/new_looks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Придумываю новые образы" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/freeNextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question_character"
-        app:layout_constraintVertical_bias="0.064">
-
-        <RadioButton
-            android:id="@+id/happy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Весёлый и оптимистичный" />
-
-        <RadioButton
-            android:id="@+id/grumpy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Ворчливый" />
-
-        <RadioButton
-            android:id="@+id/caring"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Заботливый" />
-
-        <RadioButton
-            android:id="@+id/optimist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Оптимистичный и дружелюбный" />
-
-        <RadioButton
-            android:id="@+id/thoughtful"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Задумчивый, расчётливый" />
-
-        <RadioButton
-            android:id="@+id/crazy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Я псих" />
-
-        <RadioButton
-            android:id="@+id/unlucky"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Мне постоянно невезёт, но я не отчаиваюсь" />
-
-        <RadioButton
-            android:id="@+id/calm"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Спокойный" />
-
-        <RadioButton
-            android:id="@+id/lazy"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Я ленивый/ая" />
-
-        <RadioButton
-            android:id="@+id/artist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Творческий" />
-    </RadioGroup>
-
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintVertical_bias="0.052" />
 </androidx.constraintlayout.widget.ConstraintLayout>

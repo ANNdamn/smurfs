@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/question_fav_food"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Какое блюдо ты предпочитаешь?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231" />
+
+    <RadioGroup
+        android:id="@+id/favRadioGroup"
+        android:layout_width="144dp"
+        android:layout_height="374dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_fav_food"
+        app:layout_constraintVertical_bias="0.064">
+
+        <RadioButton
+            android:id="@+id/pizza"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пицца" />
+
+        <RadioButton
+            android:id="@+id/salad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Салат" />
+
+        <RadioButton
+            android:id="@+id/soup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Суп" />
+
+        <RadioButton
+            android:id="@+id/pie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Пирог" />
+
+        <RadioButton
+            android:id="@+id/fructs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Фрукты" />
+
+        <RadioButton
+            android:id="@+id/meat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Мясо с каким-нибудь гарниром" />
+
+        <RadioButton
+            android:id="@+id/new_food"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Всегда выбираю что-нибудь новое" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/favNexButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup6"
+        app:layout_constraintVertical_bias="0.03" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

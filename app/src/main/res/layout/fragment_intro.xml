@@ -26,7 +26,7 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/who_are_you"
-        app:srcCompat="@drawable/pngwing_com" />
+        app:srcCompat="@drawable/mama_smurf" />
 
     <ImageView
         android:id="@+id/who_are_you"
@@ -38,14 +38,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.116"
-        app:srcCompat="@drawable/_21_11_2024" />
+        app:srcCompat="@drawable/question1" />
 
     <Button
-        android:id="@+id/start"
+        android:id="@+id/startButton"
         android:layout_width="194dp"
         android:layout_height="54dp"
         android:text="Начать"
-        android:background="@color/dark_blue"
+        android:background="@color/darkBlue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
