@@ -3,13 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <FrameLayout
+        android:layout_width="337dp"
+        android:layout_height="660dp"
+        android:background="@drawable/rounding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question_free_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Как ты предпочитаешь проводить свободное время?"
+        android:text="Как ты проводишь свободное время?"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,69 +41,74 @@
         app:layout_constraintVertical_bias="0.156">
 
         <RadioButton
-            android:id="@+id/read"
+            android:id="@+id/readRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Читаю книги и рисую" />
 
         <RadioButton
-            android:id="@+id/sport"
+            android:id="@+id/sportRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Занимаюсь спортом" />
 
         <RadioButton
-            android:id="@+id/cooking"
+            android:id="@+id/cookingRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Готовлю и экспериментирую на кухне" />
 
         <RadioButton
-            android:id="@+id/explore"
+            android:id="@+id/exploreRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Исследую природу" />
+            android:text="Исследую что-то новое" />
 
         <RadioButton
-            android:id="@+id/relax"
+            android:id="@+id/relaxRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Просто отдыхаю" />
 
         <RadioButton
-            android:id="@+id/think"
+            android:id="@+id/thinkRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Размышляю над всяким" />
 
         <RadioButton
-            android:id="@+id/dirt"
+            android:id="@+id/dirtRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Планирую гадость/ ненавижу весь мир" />
 
         <RadioButton
-            android:id="@+id/cry"
+            android:id="@+id/cryRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ною" />
 
         <RadioButton
-            android:id="@+id/new_looks"
+            android:id="@+id/new_looksRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Придумываю новые образы" />
     </RadioGroup>
 
-    <Button
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/freeNextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Далее"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:background="@drawable/rounded_button_background"
+        android:clickable="true"
+        android:contentDescription="Next"
+        android:focusable="true"
+        android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintTop_toBottomOf="@+id/freeRadioGroup"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 </androidx.constraintlayout.widget.ConstraintLayout>

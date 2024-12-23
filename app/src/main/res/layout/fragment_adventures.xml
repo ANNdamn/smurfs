@@ -3,13 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <FrameLayout
+        android:layout_width="337dp"
+        android:layout_height="660dp"
+        android:background="@drawable/rounding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question_advantures"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Как ты относишься к приключениям?"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -29,42 +42,46 @@
         app:layout_constraintVertical_bias="0.064">
 
         <RadioButton
-            android:id="@+id/already_right"
+            android:id="@+id/already_rightRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="я всегда готов/а!" />
 
         <RadioButton
-            android:id="@+id/home"
+            android:id="@+id/homeRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Предпочту остаться дома в безопасности" />
 
         <RadioButton
-            android:id="@+id/small"
+            android:id="@+id/smallRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Мне нравятся небольшие приключения с друзьями" />
 
         <RadioButton
-            android:id="@+id/new_place"
+            android:id="@+id/new_placeRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Я люблю исследовать новые места, но максимально аккуратно" />
-
     </RadioGroup>
 
-    <Button
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/advenNextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        style="@style/ButtonStyle"
-        android:text="Далее"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:clickable="true"
+        android:contentDescription="Next"
+        android:focusable="true"
+        android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup2"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@+id/advenRadioGroup"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

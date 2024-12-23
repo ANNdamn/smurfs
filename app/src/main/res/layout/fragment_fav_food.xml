@@ -3,13 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <FrameLayout
+        android:layout_width="337dp"
+        android:layout_height="660dp"
+        android:background="@drawable/rounding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question_fav_food"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Какое блюдо ты предпочитаешь?"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,57 +41,64 @@
         app:layout_constraintVertical_bias="0.064">
 
         <RadioButton
-            android:id="@+id/pizza"
+            android:id="@+id/pizzaRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Пицца" />
 
         <RadioButton
-            android:id="@+id/salad"
+            android:id="@+id/saladRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Салат" />
 
         <RadioButton
-            android:id="@+id/soup"
+            android:id="@+id/soupRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Суп" />
 
         <RadioButton
-            android:id="@+id/pie"
+            android:id="@+id/pieRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Пирог" />
 
         <RadioButton
-            android:id="@+id/fructs"
+            android:id="@+id/fructsRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Фрукты" />
 
         <RadioButton
-            android:id="@+id/meat"
+            android:id="@+id/meatRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Мясо с каким-нибудь гарниром" />
 
         <RadioButton
-            android:id="@+id/new_food"
+            android:id="@+id/new_foodRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Всегда выбираю что-нибудь новое" />
     </RadioGroup>
 
-    <Button
-        android:id="@+id/favNexButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Далее"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/favNextButton"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:background="@drawable/rounded_button_background"
+        android:clickable="true"
+        android:contentDescription="Next"
+        android:focusable="true"
+        android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup6"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintTop_toBottomOf="@+id/favRadioGroup"
+        app:layout_constraintVertical_bias="0.019"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

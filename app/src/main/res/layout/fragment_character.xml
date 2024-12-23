@@ -3,13 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <FrameLayout
+        android:layout_width="337dp"
+        android:layout_height="660dp"
+        android:background="@drawable/rounding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question_character"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Какой у тебя характер"
+        android:text="Какой у тебя характер?"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -19,8 +32,8 @@
 
     <RadioGroup
         android:id="@+id/charRadioGroup"
-        android:layout_width="315dp"
-        android:layout_height="497dp"
+        android:layout_width="305dp"
+        android:layout_height="443dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -29,75 +42,77 @@
         app:layout_constraintVertical_bias="0.064">
 
         <RadioButton
-            android:id="@+id/happy"
+            android:id="@+id/optimistRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Весёлый и оптимистичный" />
+            android:text="Дружелюбный и оптимистичный" />
 
         <RadioButton
-            android:id="@+id/grumpy"
+            android:id="@+id/grumpyRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ворчливый" />
 
         <RadioButton
-            android:id="@+id/caring"
+            android:id="@+id/caringRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Заботливый" />
 
-        <RadioButton
-            android:id="@+id/optimist"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Оптимистичный и дружелюбный" />
 
         <RadioButton
-            android:id="@+id/thoughtful"
+            android:id="@+id/thoughtfulRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Задумчивый, расчётливый" />
 
         <RadioButton
-            android:id="@+id/crazy"
+            android:id="@+id/crazyRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Я псих" />
 
         <RadioButton
-            android:id="@+id/unlucky"
+            android:id="@+id/unluckyRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Мне постоянно невезёт, но я не отчаиваюсь" />
 
         <RadioButton
-            android:id="@+id/calm"
+            android:id="@+id/calmRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Спокойный" />
 
         <RadioButton
-            android:id="@+id/lazy"
+            android:id="@+id/lazyRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Я ленивый/ая" />
 
         <RadioButton
-            android:id="@+id/artist"
+            android:id="@+id/artistRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Творческий" />
     </RadioGroup>
 
-    <Button
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/charNextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Далее"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_background"
+        android:clickable="true"
+        android:contentDescription="Next"
+        android:focusable="true"
+        android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup3"
-        app:layout_constraintVertical_bias="0.12" />
+        app:layout_constraintTop_toBottomOf="@+id/charRadioGroup"
+        app:layout_constraintVertical_bias="0.0"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

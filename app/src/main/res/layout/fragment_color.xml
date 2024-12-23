@@ -3,13 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/darkBlue">
+
+    <FrameLayout
+        android:layout_width="337dp"
+        android:layout_height="660dp"
+        android:background="@drawable/rounding"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/question_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Какой твой любимый цвет?"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -29,44 +42,51 @@
         app:layout_constraintVertical_bias="0.064">
 
         <RadioButton
-            android:id="@+id/blue"
+            android:id="@+id/blueRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Синий" />
 
         <RadioButton
-            android:id="@+id/red"
+            android:id="@+id/redRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Красный" />
 
         <RadioButton
-            android:id="@+id/green"
+            android:id="@+id/greenRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Зелёный" />
 
         <RadioButton
-            android:id="@+id/yellow"
+            android:id="@+id/yellowRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Жёлтый" />
 
         <RadioButton
-            android:id="@+id/pink"
+            android:id="@+id/pinkRadioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Розовый" />
     </RadioGroup>
 
-    <Button
+    <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/colorNextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Далее"
+        android:layout_width="99dp"
+        android:layout_height="39dp"
+        android:background="@drawable/rounded_button_background"
+        android:clickable="true"
+        android:contentDescription="Next"
+        android:focusable="true"
+        android:src="@drawable/arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioGroup4"
-        app:layout_constraintVertical_bias="0.034" />
+        app:layout_constraintTop_toBottomOf="@+id/colorRadioGroup"
+        app:layout_constraintVertical_bias="0.07"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
